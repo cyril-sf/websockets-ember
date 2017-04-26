@@ -1,3 +1,6 @@
 {
-  "name": "ember-js-getting-started"
+  "name": "ember-js-getting-started",
+  "dependencies": {
+    "faye-browser": "^1.1.2"
+  }
 }

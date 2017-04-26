@@ -13,6 +13,13 @@ module.exports = function(environment) {
       }
     },
 
+    faye: {
+      URL: 'http://127.0.0.1:3000/faye',
+      options: {
+        timeout: 5
+      }
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -42,7 +49,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.APP.host = 'https://stormy-gorge-81007.herokuapp.com'
-
+    ENV.faye.URL = 'https://stormy-gorge-81007.herokuapp.com/faye'
   }
 
   return ENV;
