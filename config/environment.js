@@ -16,6 +16,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      host: 'http://localhost:3000'
     }
   };
 
@@ -40,6 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.APP.host = 'https://stormy-gorge-81007.herokuapp.com'
 
   }
 
